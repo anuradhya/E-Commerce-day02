@@ -1,0 +1,80 @@
+package lk.ac.vau.fas.ict.model;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+
+public class Student {
+	private String regNo;
+	private String name;
+	private int age;
+	private String course;
+	private double gpa;
+	public Student(String regNo, String name, int age, String course, double gpa) {
+		super();
+		this.regNo = regNo;
+		this.name = name;
+		this.age = age;
+		this.course = course;
+		this.gpa = gpa;
+	}
+	public String getRegNo() {
+		return regNo;
+	}
+	public void setRegNo(String regNo) {
+		this.regNo = regNo;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Student() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public String getCourse() {
+		return course;
+	}
+	public void setCourse(String course) {
+		this.course = course;
+	}
+	public double getGpa() {
+		return gpa;
+	}
+	public void setGpa(double gpa) {
+		this.gpa = gpa;
+	}
+	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		return super.hashCode();
+	}
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		return super.equals(obj);
+	}
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		// TODO Auto-generated method stub
+		return super.clone();
+	}
+	@Override
+	public String toString() {
+		return "Student [regNo=" + regNo + ", name=" + name + ", age=" + age + ", course=" + course + ", gpa=" + gpa
+				+ "]";
+	}
+	@Override
+	protected void finalize() throws Throwable {
+		// TODO Auto-generated method stub
+		super.finalize();
+	}
+}
